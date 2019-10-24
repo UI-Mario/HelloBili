@@ -1,0 +1,16 @@
+.search{
+  width: 92%;
+  margin-left: 4%;
+  border-radius: 50rpx;
+  height: 70rpx;
+  background-color: rgb(240,240,240);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.search text{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}

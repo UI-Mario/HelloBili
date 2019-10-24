@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/cannal/cannal",
+    "pages/notice/notice",
+    "pages/appDown/app",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "bilibili",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#fb7299",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/首页 (1).png",
+        "selectedIconPath": "images/首页 (2).png"
+      },
+      {
+        "pagePath": "pages/cannal/cannal",
+        "text": "频道",
+        "iconPath": "images/频道.png",
+        "selectedIconPath": "images/频道 (1).png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "动态",
+        "iconPath": "images/动态.png",
+        "selectedIconPath": "images/动态 (1).png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "会员购",
+        "iconPath": "images/购物.png",
+        "selectedIconPath": "images/购物 (1).png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

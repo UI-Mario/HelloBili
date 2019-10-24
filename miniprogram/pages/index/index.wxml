@@ -1,0 +1,55 @@
+<view>
+  <!-- 公共头部 -->
+  <MyTitle></MyTitle>
+  <!-- 首页导航 -->
+  <view class="nav_wrap">
+    <scroll-view class="nav" scroll-x>
+      <view bindtap="activeNav" data-index="{{index}}" class="nav_item {{index===currentIndexNav?'active':''}}" wx:for="{{navList}}" wx:key="{{index}}">{{item}}</view>
+    </scroll-view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="slides">
+    <swiper autoplay indicator-dots circular>
+      <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
+        <navigator>
+          <image mode="widthFix" src="{{item}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 视频列表 -->
+  <view class="video_wrap">
+    <navigator class="video_item" wx:for="{{videoList}}" wx:key="{{index}}">
+      <!-- 图片容器 -->
+      <view class="video_img">
+        <!-- 图片 -->
+        <image bindtap="gotoDetail" class="dis_pic" mode="widthFix" src="{{item.pic}}"></image>
+        <!-- 其他信息 -->
+        <view class="video_info">
+          <!-- 播放量 -->
+          <view class="play_count">
+            <image src="../../images/播放器-播放（小电视）.png"></image>
+            <text>{{item.play}}</text>
+          </view>
+          <!-- 评论量 -->
+          <view class="video_review">
+            <image src="../../images/评论.png"></image>
+            <text>{{item.video_review}}</text>
+          </view>
+          <!-- 时长 -->
+          <view class="duration">
+            <text>{{item.duration}}</text>
+          </view>
+        </view>
+      </view>
+      <!-- 标题 -->
+      <view bindtap="gotoDetail" class="video_title">{{item.title}}</view>
+      <!-- 分类 -->
+      <view class="video_type">
+        <text>{{item.typename}}</text>
+      </view>
+    </navigator>
+  </view>
+
+</view>
